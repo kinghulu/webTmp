@@ -37,10 +37,10 @@ function diyproject(){
 
 echo
 echo "修改在package.json中的项目名称(注意:只允许英文和数字禁止空格):"
-read -p "name: " projectname && sed -i '' 's/StaticPage/'$projectname'/g' package.json
+read -p "name: " projectname && sed -i '' 's/webTmp/'$projectname'/g' package.json
 #打包文件名词
 echo "请输入你的项目文件夹名（中英文均+文件系统允许符号）:"
-read -p "archive_name :" chinesename && sed -i '' 's/StaticPage项目名称/'$chinesename'/g' Gruntfile.js
+read -p "archive_name :" chinesename && sed -i '' 's/webTmp/'$chinesename'/g' Gruntfile.js
 
 
 while true;do
@@ -62,14 +62,14 @@ if [  -a package.json ];
 then
     #cd .. && read -p "请给你的文件夹重命名:" rename && mv StaticPage $rename && cd $rename && sh go.sh
     echo "欢迎使用\"webTmp\"静态页面自动化工具"
-    echo "https://github.com/kinghulu/web.git "
+    echo "https://github.com/kinghulu/webTmp.git "
     echo
     diyproject
 else
     while true;do
         read -p '首先请git clone本项目，是否要执行(y/N)?: ' yn
     case $yn in
-        [Yy]* ) git clone https://github.com/kinghulu/web.git.git && read -p "请给你的文件夹重命名:" rename &&mv StaticPage $rename && cd $rename &&sh go.sh ; break;;
+        [Yy]* ) git clone https://github.com/kinghulu/webTmp.git && read -p "请给你的文件夹重命名:" rename &&mv StaticPage $rename && cd $rename &&sh go.sh ; break;;
         [Nn]* ) exit ;;
         * ) echo "请回答y或者N: " ;;
         esac
