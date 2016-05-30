@@ -3,16 +3,8 @@ StaticPage 静态页面自动化工具
 
 A tool for quickly creating a static page project .Based on Grunt.
 
-StaticPage是一套旨在提高静态页面开发效率、快速生成模板、开发的的工具。
+webTmp是一套旨在提高静态页面开发效率、快速生成模板、开发的的工具。
 
-
-####一键脚本安装包
-
-2014年3月27日更新:为了让大家更加方便，写了一个脚本，直接在终端运行以下命令就可以一键(1.git clone 2.重命名 3.修改项目配置 等)配置好所有的文件，不用再一个一个打开文件修改文件。脚本为`go.sh`文件，OSX系统下`sh go.sh`即可执行，大家看下就能理解。
-
-````
-git clone https://github.com/kinghulu/webTmp.git && cd StaticPage && sh go.sh
-````
 
 ####克隆本仓库
 
@@ -84,7 +76,7 @@ newProject/
 
 ####初始化
 
-git clone下来后，可以将`StaticPage`文件夹修改成项目的文件名，建议初始化时可执行一次:
+git clone下来后，可以将`webTmp`文件夹修改成项目的文件名，建议初始化时可执行一次:
 
 ````
 grunt bundle
